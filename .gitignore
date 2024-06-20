@@ -1,4 +1,10 @@
+# environment variables: api keys
 .env
+
+# old testing code
 gemini_test.py
 openai_package_test.py
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
 
