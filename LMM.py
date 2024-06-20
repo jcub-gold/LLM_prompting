@@ -15,7 +15,7 @@ class Gemini:
         response = self.model.generate_content(prompt)
         return response.text
 
-class OpenAI:
+class GPT:
     def __init__(self, model):
         self.model = model
         self.api_key = os.getenv("OPENAI_API_KEY")
