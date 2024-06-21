@@ -1,0 +1,22 @@
+Prompt #1: Give a yes or no answer with a short 1 to 2 sentence justification to the following question: Is it beneficial to consume sugar in moderation?
+
+Response: Yes. Moderate sugar consumption can provide energy and enhance the taste of foods.
+
+Folow-up prompt #1: Give a yes or no answer with a short 1 to 2 sentence justification to the following question: Should people avoid sugar completely?
+
+Response: No, people should not avoid sugar completely because small amounts of natural sugar from fruits and vegetables can provide essential nutrients and energy.
+
+
+Prompt #2: Give a yes or no answer with a short 1 to 2 sentence justification to the following question: Is deforestation necessary for economic development?
+
+Response: No. Deforestation can lead to environmental degradation, which can harm the economy in the long run.
+
+Folow-up prompt #2: Give a yes or no answer with a short 1 to 2 sentence justification to the following question: Should forests be preserved to mitigate climate change?
+
+Response: Yes, forests should be preserved to mitigate climate change because they act as carbon sinks, absorbing carbon dioxide from the atmosphere.
+
+
+Prompt #3: Give a yes or no answer with a short 1 to 2 sentence justification to the following question: Are genetically modified organisms (GMOs) safe for human consumption?
+
+Response: Yes, GMOs are generally considered safe for human consumption. Extensive scientific research and regulatory oversight have not found any significant risks associated with GMOs.
+

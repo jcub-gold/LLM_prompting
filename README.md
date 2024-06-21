@@ -14,10 +14,10 @@ $ pip install -r requirements.txt
 
 # Setup API keys
 ## For GPT-series models offered by OpenAI
-1. Get your OpenAI API key from [here](https://platform.openai.com/api-keys);
+Get your OpenAI API key from [here](https://platform.openai.com/api-keys);
 
 ## For Gemini-series models offered by Google AI Studio
-1. Get you Gemini API key from [here](https://aistudio.google.com/app/apikey);
+Get you Gemini API key from [here](https://aistudio.google.com/app/apikey);
 
 # Dataset preparation
 Prepare one text file, each line should contain a prompt. You can find examples under the `dataset/` folder. Note there should be no seperation between prompt pairs. Here's a quick preview: 

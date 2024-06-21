@@ -64,7 +64,8 @@ class LLM:
                 if (line_num == 1):
                     flag = 'w'
                 output_file = self.input_file + '_' + self.get_model() + '_output.txt'
-                with open(output_file, flag) as output:
+                file_path = os.path.join(current_dir, 'Output', output_file)
+                with open(file_path, flag) as output:
                     if (line_num % 2 == 1):
                         output.write("Prompt #" + str((line_num + 1) // 2) + ": ")
                     else:
