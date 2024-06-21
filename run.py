@@ -24,8 +24,8 @@ def prompt_pairs_batch_from_file(input_file, output_file, model_instance):
         print('reading file...')
         for line in input:
             line_num = line_num + 1
-            prompt = line.strip()
-            response = model_instance.generate_response(prompt)
+            i_prompt = line.strip()
+            response = model_instance.generate_response(prompt = i_prompt)
             flag = 'a'
             if (line_num == 1):
                 flag = 'w'
@@ -34,18 +34,18 @@ def prompt_pairs_batch_from_file(input_file, output_file, model_instance):
                     output.write("Prompt #" + str((line_num + 1) // 2) + ": ")
                 else:
                     output.write("Folow-up prompt #" + str(line_num // 2) + ": ")
-                output.write(prompt + "\n\nResponse: " + response + "\n\n")
+                output.write(i_prompt + "\n\nResponse: " + response + "\n\n")
                 if (line_num % 2 == 0):
                     output.write("\n")
         print('done')
 
 def main():
     LLM = input('Would you like to use ChatGPT(1) or Gemini(2)?\n')
-    model = input('What model would you like to use?\n')
+    i_model = input('What model would you like to use?\n')
     if (LLM == '1'):
-        LLM = GPT(model)
+        LLM = GPT(model = i_model)
     else:
-        LLM = Gemini(model)
+        LLM = Gemini(model = i_model)
     input_file = input('Please enter the name of your input file (including the .txt):\n')
     output_file = input('Please eneter the name of your ouput file (including the .txt):\n')
     prompt_pairs_batch_from_file(input_file, output_file, LLM)
