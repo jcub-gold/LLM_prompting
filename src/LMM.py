@@ -52,7 +52,9 @@ class LLM:
         line_num = 0
         self.set_input_file(**kwargs)
 
-        with open(self.input_file, 'r') as input:
+        current_dir = os.path.dirname(os.path.realpath(__file__))
+        file_path = os.path.join(current_dir, 'Dataset', self.input_file)
+        with open(file_path, 'r') as input:
             print('reading file...')
             for line in input:
                 line_num = line_num + 1
@@ -61,7 +63,7 @@ class LLM:
                 flag = 'a'
                 if (line_num == 1):
                     flag = 'w'
-                output_file = self.get_model() + '_output.txt'
+                output_file = self.input_file + '_' + self.get_model() + '_output.txt'
                 with open(output_file, flag) as output:
                     if (line_num % 2 == 1):
                         output.write("Prompt #" + str((line_num + 1) // 2) + ": ")
