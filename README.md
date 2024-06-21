@@ -30,7 +30,7 @@ This is prompt 2
 FILL OUT
 
 # Run the experiment
-Run the experiment script, and it'll save all the raw responses in `FILL OUT`.
+Run the experiment script, and it'll save all the formatted responses in `{MODEL}_output.txt`.
 ```bash
-FILL OUT
+python run.py --developer=GOOGLE --model=gemini-pro --input_file=prompt_pairs.txt
 ```
