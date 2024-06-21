@@ -1,4 +1,4 @@
-# Dual Prompting: Single modality prompting pairs
+# Dual Prompting: Single Modality Prompting Pairs
 
 
 Prepare a text file containg prompts, configure your API keys, and just run it!

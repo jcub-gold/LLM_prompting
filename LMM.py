@@ -48,19 +48,6 @@ class LLM:
     def generate_response(self, **kwargs):
         pass
 
-    """
-    FUCNTION: prompt_pairs_batch_from_file
-    ---------
-    PARAMETERS: 
-        input_file - the name of a txt file formated with one prompt per line
-    -----------
-    DESCRIPTION:
-    This function read prompts from a file and uses the specified model instance
-    to generate a response from the AI model. The prompts are expected to be in pairs,
-    meaning every two prompts relate to each other. This function has no return value
-    but will update the contents of the output file with the contents of the prompts
-    responses.    
-    """
     def prompt_pairs_batch_from_file(self, **kwargs):
         line_num = 0
         self.set_input_file(**kwargs)
