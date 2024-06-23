@@ -29,6 +29,7 @@ Get you Gemini API key from [here](https://aistudio.google.com/app/apikey);
 Prepare one text file, each line should contain a prompt. You can find examples under the `dataset/` folder. Note there should be no seperation between prompt pairs. Here's a quick preview: 
 
 This is the prompt number 1
+
 This is the follow up prompt number 2
 
 
